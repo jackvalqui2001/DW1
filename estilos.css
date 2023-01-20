@@ -1,0 +1,93 @@
+/*<!--Sección para manejar el css-->
+    <!--body:Selectores de etiqueta-->
+    <!--#"nombre": Selector de id-->
+    <!--."nombre": Selector de clase-->*/
+
+/* "*": Selecciona todos los selectores propios del html*/
+*{
+    margin: 0px;
+    padding: 0px; /*Margen interior dentro de una caja*/
+}
+
+body{
+    background: lightgray;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    background: lightblue;
+    height: 100px; /*Altura*/
+    width: 100%; /*Ancho*/
+    text-align: center; /*Centrado horizontal del texto*/
+    line-height: 100px;/*Centrado vertical del texto*/
+}
+
+nav{
+    background: lightcoral;
+    height: 50px;
+    border: 1px solid black;
+}
+
+nav ul li{
+    float: left; /*Que todos los elementos floten a la izquierda*/
+    list-style: none;/*Quitando el estilo por defento de la lista*/
+    margin: 15px;
+    line-height: 15px;
+}
+
+aside{
+    float: left;
+    width: calc(20% - 20px);
+    background:orange;
+    min-height: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 80px;
+}
+
+footer{
+    background:black;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+}
+
+#container{
+    /*width: 70%*/
+    width: 1100px;
+    margin: 0px auto;/*Centra el contenido lo más que pueda*/
+    border: 1px solid green;
+}
+
+#content{
+    float: left;
+    width: calc(80% - 80px);
+    min-height: 500px;
+    background: green;
+    padding: 40px;
+}
+
+.article{
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.article:first-child{
+    padding-top: 5px;
+    border-top: 1px solid #eee;
+}
+
+.article h2{
+    font-size: 30px;
+}
+
+.clearfix{
+    clear: both; /*Cuando se flota un elemento los de abajo se quedan en su sitio*/
+}
+
+
+            
