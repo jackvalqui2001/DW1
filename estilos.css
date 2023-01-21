@@ -90,4 +90,61 @@ footer{
 }
 
 
-            
+/*SECCIÓN JACK*/
+#banner{
+    display: flex;
+    width: 98%;
+    height: 10%;
+    border: 1px solid red;
+    padding: auto;
+    margin: auto;
+    box-shadow: 0 0 0 5px #fff,
+                0 15px 50px;
+}
+
+.corredor{
+    width: 42%;
+    height: 260px;
+    padding: 0px;
+    margin: 20px;
+
+    /*Acomodar el gráfico*/
+    animation: corredor 15s infinite;/*nombre tiempo repeticiones*/
+
+}
+
+@keyframes corredor {
+    0%,30%{
+        background: url(https://storage.googleapis.com/sspe-appv20-resources/yamaha-motor.com.pe/images/jpg/MT-03/detalles-web-asiento.jpg);    
+        background-size: 100% 100%;
+    }
+    35%,65%{
+        background-image: url(https://storage.googleapis.com/sspe-appv20-resources/yamaha-motor.com.pe/images/jpg/MT-03/detalles-web-pantalla.jpg);
+        background-size: 100% 100%;
+    }
+    70%,100%{
+        background-image: url(https://storage.googleapis.com/sspe-appv20-resources/yamaha-motor.com.pe/images/jpg/MT-03/detalles-web-motor.jpg);
+        background-size: 100% 100%;
+    }
+    
+}
+
+.texto{
+    text-align:center; /*Centrado horizontal del texto*/
+    width: 370px;
+    height: 260px;
+    border: 1px solid red;
+    padding: 0px;
+    margin: 20px;
+}
+
+.texto h4{
+    text-align: left; /*Centrado horizontal del texto*/
+    color: black;
+    padding-left: 10px;
+}
+.texto p{
+    text-align: left; /*Centrado horizontal del texto*/
+    color: white;
+    padding: 10px;
+}
