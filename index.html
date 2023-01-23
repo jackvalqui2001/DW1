@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,8 @@
         <title>Document</title>
         <!--Referenciamos la página de css-->
         <link rel="stylesheet" href="estilos.css" />
+        <!--Nos referencia a una página que nos proporciona iconos-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
     </head>
     <body>
         <!--div: caja de control general-->
@@ -17,18 +19,37 @@
             </header>
             <!--nav: caja de navegación "un menú"-->
             <nav>
-                <ul>
+                <ul class="menu-horizontal">
                     <li>
-                        <a href="index.html">Inicio</a>
+                        <a href="https://www.yamaha-motor.com.pe/" target="_blank">Inicio</a>
                     </li>
                     <li>
-                        <a href="index.html">Página 1</a>
+                        <a href="#">Nosotros</a>
+                        <ul class="menu-vertical">
+                            <li><a href="https://www.yamaha-motor.com.pe/historia-yamaha" target="_blank">Historia</a></li>
+                            <li><a href="https://www.yamaha-motor.com.pe/buscar-concesionario" target="_blank">Concesionario</a></li>
+                            <li><a href="https://www.yamaha-motor.com.pe/talleres" target="_blank">Talleres</a></li>
+                            <li><a href="https://global.yamaha-motor.com/" target="_blank">Yamaha Global</a></li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="index.html">Página 2</a>
+                        <a href="#">Motos</a>
+                        <ul class="menu-vertical">
+                            <li><a href="https://www.yamaha-motor.com.pe/crypton" target="_blank">Paseo</a></li>
+                            <li><a href="https://www.yamaha-motor.com.pe/ybr-z" target="_blank">Streets</a></li>
+                            <li><a href="https://www.yamaha-motor.com.pe/xtz125" target="_blank">Todo Terreno</a></li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="index.html">Página 3</a>
+                        <a href="#">Utilitarios</a>
+                        <ul class="menu-vertical">
+                            <li><a href="https://www.yamaha-motor.eu/es/es/products/eshop/accessories/genuine-options/motorcycles/#/" target="_blank">Motos</a></li>
+                            <li><a href="https://www.yamaha-motor.eu/es/es/products/yamalube/careline/#/" target="_blank">Aceites</a></li>
+                            <li><a href="https://www.yamaha-motor.eu/es/es/products/generators/inverter/" target="_blank">Generadores</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://www.yamaha-motor.com.pe/contacto">Contacto</a>
                     </li>
 
                 </ul>
@@ -46,17 +67,6 @@
                     </div>
                 </div>
             </section>
-
-            <!--aside: crear una caja que se referencia como barra lateral-->
-            <aside>
-                <h2>Barra Lateral</h2>
-                <form>
-                    <input type="text">
-                    <input type="submit" value="Buscar">
-                </form>
-            </aside>
-
-            <div class="clearfix"></div>
             <!--section: agrupa a un conjunto de datos-->
             <section id="content">
                 <div id ="banner">
@@ -71,11 +81,34 @@
                 </div>
             </section>
 
-            <div class="clearfix">
-                <!--footer: se referencia como un pie de página-->
-                <footer>
-                    Grupo 7 - Desarrollo Web
-                </footer>
-            </div>      
+            <!--aside: crear una caja que se referencia como barra lateral-->
+            <aside>
+                <h2>Barra Lateral</h2>
+                <form>
+                    <input type="text">
+                    <input type="submit" value="Buscar">
+                </form>
+            </aside>
+
+            <div class="clearfix"></div>
+
+        </div>
+        <footer>
+            <div class="footer-content">
+                <h3>Grupo 7 - Desarrollo Web</h3>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitch"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyrigth &copy; 2023 Grupo 7 el mejor siempre el mejor designed by <span>kreeme we</span></p>
+            </div>
+        </footer>
+            
     </body>
 </html>

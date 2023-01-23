@@ -23,11 +23,40 @@ header{
 }
 
 nav{
-    background: lightcoral;
+    background-color: black;
+    font-size: 20px;
     height: 50px;
     border: 1px solid black;
+    text-decoration: none;
 }
-
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.menu-horizontal > li > a{
+    display: block;
+    padding: flex;
+    justify-content: space-around;
+}
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    background-color: rgba(0, 0, 0, .5);
+}
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+.menu-vertical li:hover{
+    background-color: black;
+}
+.menu-vertical li a{
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
 nav ul li{
     float: left; /*Que todos los elementos floten a la izquierda*/
     list-style: none;/*Quitando el estilo por defento de la lista*/
@@ -50,11 +79,64 @@ aside{
 footer{
     background:black;
     color: white;
-    text-align: center;
-    line-height: 50px;
-    height: 50px;
+    padding-top:40px;
+    height: auto;
+    width: 100vw;
 }
-
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+}
+.socials a:hover i{
+    color:aqua;
+}
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding:20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+}
 #container{
     /*width: 70%*/
     width: 1100px;
