@@ -15,11 +15,21 @@ body{
 }
 
 header{
-    background: lightblue;
-    height: 100px; /*Altura*/
-    width: 100%; /*Ancho*/
-    text-align: center; /*Centrado horizontal del texto*/
-    line-height: 100px;/*Centrado vertical del texto*/
+    height: 200px; /*Altura*/
+    width: auto; /*Ancho*/
+}
+.imagenfondo{
+    position:absolute;
+    height: 200px;
+    width: 1100px;
+    object-fit: none;
+}
+.logo{
+    position:absolute;
+    top:50px;
+    height: 100px;
+    width: 1100px;
+    object-fit:scale-down;
 }
 
 nav{
